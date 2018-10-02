@@ -1,4 +1,4 @@
-Angular Application to filter news on the web
+Angular Application to filter news related to UIC on the web
 
 ## Description
 
@@ -26,11 +26,21 @@ Steps to run the application :
 
 Run `npm install -g @angular/cli` to install Angular CLI. 
 
-Run `cd angular_rest_api` to navigate to that folder.
+## Clone the repository
 
-## Development server
+Run `git clone <https/ssh link>` to clone the repository to your local computer
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Navigate to the repository on local machine.
+
+Run `cd News-Org` to navigate to that folder.
+
+## Install node modules
+
+Run `npm install` to install the node modules
+
+## Run the application on Development server
+
+Run `ng serve` to run the app on a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Build
 
