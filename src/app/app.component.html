@@ -1,0 +1,27 @@
+<h1>News Org Posts</h1>
+<h5>(Click on an article to view its details)</h5>
+<div *ngIf="undefined === restItems">Loading...</div>
+<div *ngIf="undefined !== restItems">
+
+  <ul>
+    <li *ngFor="let article of restItems['articles']" [innerHTML]="article.title" [class.selected]="article === selectedTitle"
+      (click)="onSelect(article)">
+    </li>
+  </ul>
+
+</div>
+<div *ngIf="selectedTitle">
+
+  <h2>{{selectedTitle.title | uppercase}}</h2>
+  <div><span><b>Author: </b></span>{{selectedTitle.author}}</div>
+  <div><span><b>Description: </b></span>{{selectedTitle.description}}</div>
+  <div><span><b>Published At: </b></span>{{selectedTitle.publishedAt}}</div>
+  <div><span><b>Sources: </b></span>{{selectedTitle.source.name}}</div>
+  <div><span><b>Link to the Article: </b></span>{{selectedTitle.url}}</div>
+  <div>
+    <label><b>Title:</b>
+      <input [(ngModel)]="selectedTitle.title" placeholder="title" />
+    </label>
+  </div>
+
+</div>
