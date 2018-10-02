@@ -9,22 +9,18 @@ To view the endpoint and documentation on the query parameters, refer https://ne
 
 **Note: It displays articles that are mentioned upto last 1 month till today and also gives only little description on the article. In order to view the article completely, refer the URL mentioned in the article attributes on the home page. The above limitations are due to Developer subscription. You can pay and upgrade the subscription at https://newsapi.org/pricing to avoid the limitations.
 
-Getting Started
+## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-Downloads:
 
 ## Download Node.js
 
 https://nodejs.org/en/download/
 Version: 8.12.0
 
-Steps to run the application :
-
 ## Install Angular CLI 
 
-Run `npm install -g @angular/cli` to install Angular CLI. 
+Run `npm install -g @angular/cli` in the terminal to install Angular CLI. 
 
 ## Clone the repository
 
